@@ -14,6 +14,10 @@ make or make tetris
 Arrow to control tile.
 
 up: rotation
+
 down: go faster
+
 left: move left
+
 right: move right
+
