@@ -539,9 +539,9 @@ int main( int argc, char **argv ){
 
     glutCreateWindow("tetris");
 
-    // Iff you get a segmentation error at line 34, please uncomment the line below
-    glewExperimental = GL_TRUE; 
-    glewInit();
+    // Iff you get a segmentation error, please uncomment the line below
+    //glewExperimental = GL_TRUE; 
+    //glewInit();
 
     init();
 
