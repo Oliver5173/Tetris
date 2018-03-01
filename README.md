@@ -5,7 +5,9 @@
 
 3.use make command to build tetris. 
 
-("make" or "make tetris")
+'''
+make or make tetris
+'''
 
 
-#play
+## play
