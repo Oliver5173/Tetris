@@ -21,3 +21,4 @@ left: move left
 
 right: move right
 
+r : restart a new game
