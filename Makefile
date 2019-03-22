@@ -1,33 +1,31 @@
 #! /usr/bin/make
 
-# Generic Makefile that should work with any program you're going to compile.
-# Any complaints should be directed at honghual@sfu.ca
+# This generic Makefile works with any program that needs to be compiled.
+# Please contact honghual@sfu.ca if there is any problem.
 #
-# To compile and link your program all you have to do is run 'make' in the
-#    current directory.
-# To clean up object files run 'make clean_object'.
-# To delete any compiled files run 'make clean'.
+# Run 'make' in the current directory to compile and link the program.
+# Run 'make clean_object' to clean up object files.
+# Run 'make clean' to delete any compiled files.
 # Originated in 2001 by Haris Teguh
 # modified May-2012 by Honghua Li
 
 # Including of non standard library files:
-#   INCLUDEDIR is where the header files can be found
-#   LIBDIR is where the library object files can be found
+#    The header files can be found in INCLUDEDIR.
+#    The library object files can be found in LIBDIR.
 INCLUDEDIR=/usr/include/
 LIBDIR=/usr/lib
 
-# If you have more source files add them here 
+# Add more source files here
 SOURCE= tetris.cpp include/InitShader.cpp
 
-# The compiler we are using 
+# The compiler we are using
 CC= g++
 
 # The flags that will be used to compile the object file.
-# If you want to debug your program,
-# you can add '-g' on the following line
+# Add '-g' on the following line to debug your program.
 CFLAGS= -O3 -g -Wall -pedantic -DGL_GLEXT_PROTOTYPES
 
-# The name of the final executable 
+# The name of the final executable
 EXECUTABLE=tetris
 
 # The basic library we are using add the other libraries you want to link
@@ -36,7 +34,7 @@ EXECUTABLE=tetris
 # Linux (default)
 LDFLAGS = -lGL -lglut -lGLEW -lXext -lX11 -lm
 
-# If you have other library files in a different directory add them here 
+# Add other library files in a different directory here:
 INCLUDEFLAG= -I. -I$(INCLUDEDIR) -Iinclude/
 LIBFLAG= -L$(LIBDIR)
 
